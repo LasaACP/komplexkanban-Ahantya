@@ -1,6 +1,6 @@
 /*
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Title : ComplexSin.cpp
+Title : ComplexExp.cpp
 Author : Ahantya Sharma
 URL : NA
 Description : The implementation of this function returns the sin of a complex number. Written by Ahantya Sharma
@@ -12,7 +12,6 @@ Modified : Dec. 5th
 #include "../../include/Complex.h"
 #include <cmath>
 #define double e = 2.718281828459045;
-#include <complex>
 
 double Complex::raiseE(const Complex other) {
 {

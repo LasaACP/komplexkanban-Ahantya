@@ -152,7 +152,7 @@ class Complex {
      * @return the absolute value of com
      * @author Aaron Lee
      */
-     friend double conj(Complex other);
+     friend Complex conj(Complex other);
 
     /**
      * Returns the absolute value (sqrt(a^2+b^2)) of com
