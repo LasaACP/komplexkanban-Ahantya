@@ -26,5 +26,5 @@ Complex Complex::operator * (Complex other)
 }
 
 Complex Complex::operator * (double other) {
-	return Complex(real * other, imaginary * other)
+	return Complex(real * other, imaginary * other);
 }
