@@ -88,6 +88,10 @@ class Complex {
 	bool operator ==(Complex other);
 	bool operator ==(double other);
 
+
+  Complex& operator *= (Complex other);
+	Complex& operator *= (double other);	
+
     /**
      * Returns the real part of comlpex number
      * @param com The complex number to find the real part of

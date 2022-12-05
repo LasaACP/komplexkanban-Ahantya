@@ -1,23 +1,37 @@
 #include <cstdlib>
 #include <iostream>
-#include "Complex.h"
+#include "../include/Complex.h"
+
+#include "../lib/ComplexConstructors.cpp"
+#include "../lib/Operators/ComplexAddition.cpp"
+#include "../lib/Operators/ComplexSubtraction.cpp"
+#include "../lib/Operators/ComplexSubtractionAssign.cpp"
+#include "../lib/Operators/ComplexAdditionAssign.cpp"
+#include "../lib/Operators/ComplexDivision.cpp"
+#include "../lib/Operators/ComplexEqualityOperator.cpp"
+#include "../lib/Operators/ComplexMultiplication.cpp"
+#include "../lib/Operators/ComplexMultiplicationAssign.cpp"
+#include "../lib/Operators/ComplexInput.cpp"
+
 #include "fac.h"
+
+using namespace std;
 
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
 int main () {
-    std::cout << "Hello World" << std::endl;
+    cout << "Hello World" << endl;
 
-    std::cout << "Factorial test " << Factorial(5) << std::endl;
+    cout << "Factorial test " << Factorial(5) << endl;
   
-    //Complex a(5.0,6.0),b;
+    Complex a(5.0,6.0),b;
 
-    /*std::cout << "Enter b: ";
-    std::cin >> b;
+    cout << "Enter b: ";
+    cin >> b;
 
-    std::cout << "a = " << a << "\n";
-    std::cout << "b = " << b << "\n";*/
+    //cout << "a = " << a << "\n";
+    //cout << "b = " << b << "\n";*/
     //Complex a = 
 
     //std::cout << "a + b = " << a + b << "\n";

@@ -14,8 +14,16 @@ Modified : Dec. 1st
 Complex& Complex::operator *=(Complex other)
 {
 	//multiply rhs parts by this object's parts
-	real = real * other.real;
-	imaginary = imaginary * other.imaginary;
+	double a = real;
+	double b = imaginary;
+	double c = other.real;
+	double d = other.imaginary;
+
+	double newImaginary = ((a * d) + (b * c));
+	double newReal = ((a * c) - (b * d));
+
+  real = newReal;
+  imaginary = newImaginary;
 
 	return *this;
 }

@@ -1,7 +1,5 @@
 SHELL = /bin/sh
 
-all: main
-
 CXX = clang++
 override CXXFLAGS += -g -Wno-everything
 
@@ -12,8 +10,8 @@ TESTS := $(filter-out catch_amalgamated.cpp, $(TESTS))
 HEADERS := $(wildcard *.h*)
 HEADERS := $(filter-out catch_amalgamated.hpp, $(TESTS))
 
-main: complasa_runner.cpp ../src/fac.cpp ../src/fac.h $(HEADERS)
-	$(CXX) $(CXXFLAGS) $(TESTS) -I ../include ../src/fac.cpp  -o "$@"
+main: fac.h fac.cpp
+	$(CXX) $(CXXFLAGS) complasa_runner.cpp -I fac.h fac.cpp -o "$@"
 
 
 main-debug: $(SRCS) $(HEADERS)
@@ -24,3 +22,6 @@ catch_amalgamated: catch_amalgamated.cpp catch_amalgamated.hpp
 
 clean:
 	rm -f main main-debug
+
+all:
+	main
