@@ -5,15 +5,14 @@ all: main
 CXX = clang++
 override CXXFLAGS += -g -Wno-everything
 
-SRCS := $(wildcard src/*.cpp)
-SRCS := $(filter-out catch_amalgamated.cpp, $(SRCS))
-TESTS := $(wildcard *.cpp)
-TESTS := $(filter-out catch_amalgamated.cpp, $(TESTS))
+#SRCS := $(wildcard *.cpp)
+#SRCS := $(filter-out catch_amalgamated.cpp, $(SRCS))
+
 HEADERS := $(wildcard *.h*)
 HEADERS := $(filter-out catch_amalgamated.hpp, $(TESTS))
 
-main: complasa_runner.cpp ../src/fac.cpp ../src/fac.h $(HEADERS)
-	$(CXX) $(CXXFLAGS) $(TESTS) -I ../include ../src/fac.cpp  -o "$@"
+main: Main.cpp $(HEADERS)
+	$(CXX) $(CXXFLAGS) Main.cpp fac.cpp -I ../include  -o "$@"
 
 
 main-debug: $(SRCS) $(HEADERS)

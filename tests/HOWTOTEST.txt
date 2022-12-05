@@ -5,7 +5,7 @@ See additiontest.cpp for general structure
 
 COMMAND LINE:
 cd tests/ 
-g++ [testfile] ../include/Complex.h  catch_amalgamated.cpp
+g++ [testfile] ../include/Complex.h catch_amalgamated.cpp
 ./a.out
 
 Don't worry if it takes a long time

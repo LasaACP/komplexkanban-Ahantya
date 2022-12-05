@@ -23,3 +23,10 @@ catch_amalgamated: catch_amalgamated.cpp catch_amalgamated.hpp
 
 clean:
 	rm -f main main-debug
+
+
+
+https://github.com/LasaACP/komplexkanban-Ahantya
+
+
+ g++ OperatorTests/additiontest.cpp ../include/Complex.h catch_amalgamated.cpp

@@ -113,7 +113,7 @@ class Complex {
      * Returns the absolute value (sqrt(a^2+b^2)) of com
      * @param com the complex number to find the absolute value of
      * @return the absolute value of com
-     * @author ____________
+     * @author Aaron Lee
      */
     friend double abs(Complex);
   
