@@ -17,6 +17,7 @@
 #include "../lib/Operators/ComplexSubtractionAssign.cpp"
 //Functions
 #include "../lib/Functions/ComplexAbsoluteValue.cpp"
+#include "../lib/Functions/ComplexConj.cpp"
 
 #include "fac.h"
 
@@ -70,12 +71,12 @@ int main () {
     cout << "(a == b) = " << (a == b) << "\n";    //equality for complex
     cout << "(a == c) = " << (a == c) << "\n";    //equality for double
     
-    /*std::cout << "complex conjugate of a = " << conj(a) << "\n";
-    std::cout << "norm of a = " << norm(a) << "\n";
-    std::cout << "abs of a = " << abs(a) << "\n";
-    std::cout << "exp(a) = " << exp(a) << "\n";
+    cout << "complex conjugate of a = " << conj(a) << "\n";
+    //cout << "norm of a = " << norm(a) << "\n";
+    //cout << "abs of a = " << abs(a) << "\n";
+    //cout << "exp(a) = " << exp(a) << "\n";
 
-    Complex j = Complex(0.0,1.0);
+    /*Complex j = Complex(0.0,1.0);
     Complex z1 = 1+2*j;
     Complex z2 = 2+3*j;
 
