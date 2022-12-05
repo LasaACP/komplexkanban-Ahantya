@@ -15,6 +15,6 @@ Modified : Dec. 5th
 
 ostream& operator << (ostream &out, const Complex&d)
 {
-    out << "(" << d.real << "," << d.imaginary << ")" << endl;
+    out << "(" << d.real << "," << d.imaginary << ")";
     return out;
 }

@@ -3,16 +3,20 @@
 #include "../include/Complex.h"
 
 #include "../lib/ComplexConstructors.cpp"
+//Operators
 #include "../lib/Operators/ComplexAddition.cpp"
-#include "../lib/Operators/ComplexSubtraction.cpp"
-#include "../lib/Operators/ComplexSubtractionAssign.cpp"
 #include "../lib/Operators/ComplexAdditionAssign.cpp"
 #include "../lib/Operators/ComplexDivision.cpp"
+#include "../lib/Operators/ComplexDivisionAssign.cpp"
 #include "../lib/Operators/ComplexEqualityOperator.cpp"
+#include "../lib/Operators/ComplexInput.cpp"
 #include "../lib/Operators/ComplexMultiplication.cpp"
 #include "../lib/Operators/ComplexMultiplicationAssign.cpp"
-#include "../lib/Operators/ComplexInput.cpp"
 #include "../lib/Operators/ComplexOutput.cpp"
+#include "../lib/Operators/ComplexSubtraction.cpp"
+#include "../lib/Operators/ComplexSubtractionAssign.cpp"
+//Functions
+#include "../lib/Functions/ComplexAbsoluteValue.cpp"
 
 #include "fac.h"
 
@@ -24,19 +28,49 @@ using namespace std;
 int main () {
   
     Complex a(5.0,6.0),b(2.0, 3.0);
+    double c = 4;
 
-    cout << a * b;
-    cout << a * 9;
+    cout << "a = " << a << "\n";
+    cout << "b = " << b << "\n";
+    cout << "c = " << c<< "\n\n";
 
-    //cout << "a = " << a << "\n";
-    //cout << "b = " << b << "\n";*/
-    //Complex a = 
+    //complex testing
+    cout << "complex testing for operators:" << "\n";
+    cout << "a + b = " << a + b << "\n";
+    cout << "a - b = " << a - b << "\n";
+    cout << "a / b = " << a / b << "\n";
+    cout << "a * b = " << a * b << "\n";
+    a += b;
+    cout << "a += b" << "\na = " << a << "\n";
+    a -= b;
+    cout << "a -= b" << "\na = " << a << "\n";
+    a /= b;
+    cout << "a /= b" << "\na = " << a << "\n";
+    a *= b;
+    cout << "a *= b" << "\na = " << a << "\n\n";
 
-    //std::cout << "a + b = " << a + b << "\n";
-    //std::cout << "a * b = " << a * b << "\n";
-    //std::cout << "a / b = " << a / b << "\n";
-    /*std::cout << "|a| = "   << abs(a) << "\n";
-    std::cout << "complex conjugate of a = " << conj(a) << "\n";
+    //double testing
+    cout << "double testing for operators:" << "\n";
+    cout << "a + c = " << a + c << "\n";
+    cout << "a - c = " << a - c << "\n";
+    cout << "a / c = " << a / c << "\n";
+    cout << "a * c = " << a * c << "\n";
+      a += c;
+    cout << "a += c" << "\na = " << a << "\n";
+    a -= c;
+    cout << "a -= c" << "\na = " << a << "\n";
+    a /= c;
+    cout << "a /= c" << "\na = " << a << "\n";
+    a *= c;
+    cout << "a *= c" << "\na = " << a << "\n\n";
+
+    //Arithmetic Library Function testing
+    cout << "Arithmetic Library Function testing:" << "\n";
+    cout << "|a| = "   << abs(a) << "\n";         //abs
+    cout << "(a == b) = " << (a == b) << "\n";    //equality for complex
+    cout << "(a == c) = " << (a == c) << "\n";    //equality for double
+    
+    /*std::cout << "complex conjugate of a = " << conj(a) << "\n";
     std::cout << "norm of a = " << norm(a) << "\n";
     std::cout << "abs of a = " << abs(a) << "\n";
     std::cout << "exp(a) = " << exp(a) << "\n";
