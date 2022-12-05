@@ -13,10 +13,8 @@ Modified : Dec. 5th
 #include <iostream>
 #include "../../include/Complex.h"
 
-ostream& operator << (ostream &out, const complex&d); 
+ostream& operator << (ostream &out, const Complex&d)
 {
-    out << d.real;
-    out << "+" << d.imaginary << "i" << endl;
+    out << "(" << d.real << "," << d.imaginary << ")" << endl;
     return out;
-  
 }
