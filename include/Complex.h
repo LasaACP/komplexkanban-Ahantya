@@ -79,6 +79,24 @@ class Complex {
 	Complex& operator -=(Complex other);
 	Complex& operator -=(double other);
 
+  /**
+     * Divides two complex numbers or a real from a complex and applies the result to the left hand side object
+     * @param com The complex/real number to divide
+     * @return complex
+     * @author Aaron Lee
+     */
+  Complex& operator /= (Complex other);
+	Complex& operator /= (double other);	
+
+  /**
+     * Multiplies two complex numbers or a real from a complex and applies the result to the left hand side object
+     * @param com The complex/real number to multiply
+     * @return complex
+     * @author Nathan Gonzalez
+     */
+  Complex& operator *= (Complex other);
+	Complex& operator *= (double other);	
+
 	/**
      * Compares a complex number to a complex/real number: if the real and imaginary parts are equal (a real number's imaginary part is 0)  returns true
      * @param com The complex/real number to subtract
@@ -89,8 +107,7 @@ class Complex {
 	bool operator ==(double other);
 
 
-  Complex& operator *= (Complex other);
-	Complex& operator *= (double other);	
+
 
     /**
      * Returns the real part of comlpex number
@@ -119,7 +136,8 @@ class Complex {
      * @return the absolute value of com
      * @author Aaron Lee
      */
-    double abs(Complex other);
+     friend double abs(Complex other);
+
   
   
   
