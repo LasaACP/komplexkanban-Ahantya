@@ -12,5 +12,5 @@ Modified : Dec. 5th
 #include "../../include/Complex.h"
 
 double Complex::abs(Complex other){
-  return (other.real^2+other.imaginary^2)^(1/2);
+  return (other.real^2.0+other.imaginary^2.0)^(1/2);
 }
