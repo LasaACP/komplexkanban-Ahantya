@@ -138,8 +138,58 @@ class Complex {
      */
      friend double abs(Complex other);
 
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend double arg(Complex other);
+
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend double conj(Complex other);
+
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend double imag(Complex& other);
+
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend double norm(Complex other);
+
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend double polar(double mag, double ang);
+
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend double real(Complex& other);
+
+
   
-  
+  //------------------------------------- MATHEMATIC AND TRIG LIBRARY FUNCTIONS -------------------------------------------
+
   
   
   
