@@ -12,6 +12,7 @@
 #include "../lib/Operators/ComplexMultiplication.cpp"
 #include "../lib/Operators/ComplexMultiplicationAssign.cpp"
 #include "../lib/Operators/ComplexInput.cpp"
+#include "../lib/Operators/ComplexOutput.cpp"
 
 #include "fac.h"
 
@@ -21,14 +22,11 @@ using namespace std;
 #define EULER 2.71828182845904523536
 
 int main () {
-    cout << "Hello World" << endl;
-
-    cout << "Factorial test " << Factorial(5) << endl;
   
-    Complex a(5.0,6.0),b;
+    Complex a(5.0,6.0),b(2.0, 3.0);
 
-    cout << "Enter b: ";
-    cin >> b;
+    cout << a * b;
+    cout << a * 9;
 
     //cout << "a = " << a << "\n";
     //cout << "b = " << b << "\n";*/
