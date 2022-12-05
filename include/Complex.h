@@ -115,14 +115,14 @@ class Complex {
      * @return complex.real
      * @author ___________
      */
-    friend double real(Complex);
+    friend double real(Complex other);
     /**
      * Returns the imaginary part of complex number
      * @param com The complex number to find the real part of
      * @return complex.imaginary
      * @author _________
      */
-      friend double imag(Complex);
+      friend double imag(Complex other);
   
   
   
@@ -137,6 +137,7 @@ class Complex {
      * @author Aaron Lee
      */
      friend double abs(Complex other);
+
   
   
   

@@ -11,8 +11,8 @@ Modified : Dec. 5th
 
 #include "../../include/Complex.h"
 #include <cmath>
-
 double abs(Complex other){
   
   return sqrt(pow(other.real,2.0) + pow(other.imaginary, 2.0));
+
 }
