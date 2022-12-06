@@ -105,15 +105,6 @@ class Complex {
      */
 	bool operator ==(Complex other);
 	bool operator ==(double other);
-
-    /**
-     * Returns the imaginary part of complex number
-     * @param com The complex number to find the real part of
-     * @return complex.imaginary
-     * @author _________
-     */
-      friend double imag(Complex other);
-  
   
   
   
@@ -166,7 +157,7 @@ class Complex {
      * @return the absolute value of com
      * @author Aaron Lee
      */
-     friend double polar(double mag, double ang);
+     friend Complex polar(double mag, double ang);
 
     /**
      * Returns the absolute value (sqrt(a^2+b^2)) of com
@@ -180,7 +171,13 @@ class Complex {
   
   //------------------------------------- MATHEMATIC AND TRIG LIBRARY FUNCTIONS -------------------------------------------
 
-  
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend double sqrt(Complex other);
   
   
   
