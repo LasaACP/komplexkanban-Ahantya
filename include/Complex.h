@@ -106,16 +106,6 @@ class Complex {
 	bool operator ==(Complex other);
 	bool operator ==(double other);
 
-
-
-
-    /**
-     * Returns the real part of comlpex number
-     * @param com The complex number to find the real part of
-     * @return complex.real
-     * @author ___________
-     */
-    friend double real(Complex other);
     /**
      * Returns the imaginary part of complex number
      * @param com The complex number to find the real part of

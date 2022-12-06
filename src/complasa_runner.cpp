@@ -18,6 +18,7 @@
 //Functions
 #include "../lib/Functions/ComplexAbsoluteValue.cpp"
 #include "../lib/Functions/ComplexConj.cpp"
+#include "../lib/Functions/ComplexReal.cpp"
 
 #include "fac.h"
 
@@ -93,8 +94,9 @@ int main () {
 
     /* other function testing */
     /*
-    cout << "\n------ OTHER FUNCTION TESTING ------\n\n";
+    cout << "\n------ OTHER FUNCTION TESTING ------\n\n";*/
     cout << "The real part is: " << real(a) << "\n";
+    /*
     cout << "The imaginary part is: " << imag(a) << "\n";
     cout << "The log (base 10) is: " << log10(a) << "\n";
     cout << "a^b is: " << pow(a, b) << "\n";
