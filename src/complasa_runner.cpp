@@ -19,6 +19,9 @@
 #include "../lib/Functions/ComplexAbsoluteValue.cpp"
 #include "../lib/Functions/ComplexConj.cpp"
 #include "../lib/Functions/ComplexReal.cpp"
+#include "../lib/Functions/ComplexArg.cpp"
+#include "../lib/Functions/ComplexPolar.cpp"
+
 
 #include "fac.h"
 
@@ -29,7 +32,7 @@ using namespace std;
 
 int main () {
   
-    Complex a(5.0,6.0),b(2.0, 3.0);
+    Complex a(3.0,4.0),b(2.0, 3.0);
     double c = 4;
 
     cout << "a = " << a << "\n";
@@ -57,7 +60,7 @@ int main () {
     cout << "a - c = " << a - c << "\n";
     cout << "a / c = " << a / c << "\n";
     cout << "a * c = " << a * c << "\n";
-      a += c;
+    a += c;
     cout << "a += c" << "\na = " << a << "\n";
     a -= c;
     cout << "a -= c" << "\na = " << a << "\n";
@@ -71,8 +74,9 @@ int main () {
     cout << "|a| = "   << abs(a) << "\n";         //abs
     cout << "(a == b) = " << (a == b) << "\n";    //equality for complex
     cout << "(a == c) = " << (a == c) << "\n";    //equality for double
-    
     cout << "complex conjugate of a = " << conj(a) << "\n";
+    cout << "angle of a = " << arg(a) << "\n";
+    cout << "complex form for (5.39, 0.38) = " << polar(5.39, 0.38) << "\n";
     //cout << "norm of a = " << norm(a) << "\n";
     //cout << "abs of a = " << abs(a) << "\n";
     //cout << "exp(a) = " << exp(a) << "\n";
