@@ -177,7 +177,7 @@ class Complex {
      * @return the absolute value of com
      * @author Aaron Lee
      */
-     friend double sqrt(Complex other);
+     friend Complex cos(Complex other);
   
   
   

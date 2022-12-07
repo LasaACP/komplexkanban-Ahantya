@@ -1,6 +1,6 @@
 /*
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Title : ComplexSqrt.cpp
+Title : ComplexPolar.cpp
 Author : Aaron Lee
 URL : NA
 Description : The implementation for a function that determines the complex number given polar coordinates that was written by Aaron Lee. 
