@@ -25,6 +25,7 @@
 #include "../lib/Functions/ComplexSqrt.cpp"
 #include "../lib/Functions/ComplexCos.cpp"
 #include "../lib/Functions/ComplexLog.cpp"
+#include "../lib/Functions/ComplexSin.cpp"
 
 #include "fac.h"
 
@@ -97,10 +98,8 @@ int main () {
     cout << "The phase in Radians is: " << arg(z1) << "\n";
     cout << "The norm is: " << norm(z1) << "\n";
     */
-    cout << "The sqrt is: " << sqrt(a) << "\n";
-    cout << "The natural log is: " << log(a) << "\n";
-    /*
-    cout << "The sin is: " << sin(z1) << "\n";*/
+    cout << "The natural log is: " << log(z1) << "\n";
+    cout << "The sin is: " << sin(a) << "\n";
 
     /* other function testing */
     /*
