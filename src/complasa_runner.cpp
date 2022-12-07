@@ -23,6 +23,7 @@
 #include "../lib/Functions/ComplexPolar.cpp"
 #include "../lib/Functions/ComplexPow.cpp"
 #include "../lib/Functions/ComplexSqrt.cpp"
+#include "../lib/Functions/ComplexCos.cpp"
 
 #include "fac.h"
 
@@ -78,6 +79,7 @@ int main () {
     cout << "complex conjugate of a = " << conj(a) << "\n";
     cout << "angle of a = " << arg(a) << "\n";
     cout << "complex form for (5.39, 0.38) = " << polar(5.39, 0.38) << "\n";
+    cout << "cos for a = " << cos(a) << "\n";
     //cout << "norm of a = " << norm(a) << "\n";
     //cout << "abs of a = " << abs(a) << "\n";
     //cout << "exp(a) = " << exp(a) << "\n";
