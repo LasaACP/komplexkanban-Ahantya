@@ -120,9 +120,9 @@ class Complex {
      friend double abs(Complex other);
 
     /**
-     * Returns the absolute value (sqrt(a^2+b^2)) of com
-     * @param com the complex number to find the absolute value of
-     * @return the absolute value of com
+     * Returns the angle of a complex number
+     * @param com the complex number 
+     * @return the angle in the form of a double
      * @author Aaron Lee
      */
      friend double arg(Complex other);
@@ -136,25 +136,25 @@ class Complex {
      friend Complex conj(Complex other);
 
     /**
-     * Returns the absolute value (sqrt(a^2+b^2)) of com
-     * @param com the complex number to find the absolute value of
-     * @return the absolute value of com
+     * Returns the imaginary part of the complex numer
+     * @param complex number
+     * @return the imaginary part of com
      * @author Aaron Lee
      */
      friend double imag(Complex& other);
 
     /**
-     * Returns the absolute value (sqrt(a^2+b^2)) of com
-     * @param com the complex number to find the absolute value of
-     * @return the absolute value of com
-     * @author Aaron Lee
+     * Returns the square of magnitude of com
+     * @param complex number
+     * @return the magnitude of a complex number
+     * @author Ahantya Sharma
      */
      friend double norm(Complex other);
 
     /**
-     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * Returns the polar coordinates of a complex number
      * @param com the complex number to find the absolute value of
-     * @return the absolute value of com
+     * @returns a complex number
      * @author Aaron Lee
      */
      friend Complex polar(double mag, double ang);
@@ -175,7 +175,7 @@ class Complex {
      * Returns the absolute value (sqrt(a^2+b^2)) of com
      * @param com the complex number to find the absolute value of
      * @return the absolute value of com
-     * @author Aaron Lee
+     * @author 
      */
      friend Complex sqrt(Complex& other);
 
@@ -191,10 +191,10 @@ class Complex {
      friend Complex pow(Complex base, Complex exp);
 
     /**
-     * Returns the result of sine of a complex number.
+     * Returns the result of cos of a complex number.
      * @param complex number
      * @return the result of the mathematical operation
-     * @author Ahantya Sharma
+     * @author Aaron Lee
      */
   
     friend Complex cos(Complex other);
