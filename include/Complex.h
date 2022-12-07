@@ -177,7 +177,7 @@ class Complex {
      * @return the absolute value of com
      * @author Aaron Lee
      */
-     friend double sqrt(Complex other);
+     friend Complex sqrt(Complex& other);
 
     /**
      * Returns the result of a complex or real to a real or complex power
