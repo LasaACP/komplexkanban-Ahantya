@@ -24,6 +24,7 @@
 #include "../lib/Functions/ComplexPow.cpp"
 #include "../lib/Functions/ComplexSqrt.cpp"
 #include "../lib/Functions/ComplexCos.cpp"
+#include "../lib/Functions/ComplexLog.cpp"
 
 #include "fac.h"
 
@@ -97,8 +98,8 @@ int main () {
     cout << "The norm is: " << norm(z1) << "\n";
     */
     cout << "The sqrt is: " << sqrt(a) << "\n";
+    cout << "The natural log is: " << log(a) << "\n";
     /*
-    cout << "The natural log is: " << log(z1) << "\n";
     cout << "The sin is: " << sin(z1) << "\n";*/
 
     /* other function testing */
