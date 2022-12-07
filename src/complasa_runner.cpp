@@ -22,7 +22,7 @@
 #include "../lib/Functions/ComplexArg.cpp"
 #include "../lib/Functions/ComplexPolar.cpp"
 #include "../lib/Functions/ComplexPow.cpp"
-
+#include "../lib/Functions/ComplexSqrt.cpp"
 
 #include "fac.h"
 
@@ -93,7 +93,9 @@ int main () {
     cout << "The magnitude is: " << abs(z1) << "\n";
     cout << "The phase in Radians is: " << arg(z1) << "\n";
     cout << "The norm is: " << norm(z1) << "\n";
-    cout << "The sqrt is: " << sqrt(z1) << "\n";
+    */
+    cout << "The sqrt is: " << sqrt(a) << "\n";
+    /*
     cout << "The natural log is: " << log(z1) << "\n";
     cout << "The sin is: " << sin(z1) << "\n";*/
 
