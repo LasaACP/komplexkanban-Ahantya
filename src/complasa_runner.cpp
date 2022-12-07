@@ -27,6 +27,7 @@
 #include "../lib/Functions/ComplexLog.cpp"
 #include "../lib/Functions/ComplexSin.cpp"
 #include "../lib/Functions/ComplexExp.cpp"
+#include "../lib/Functions/ComplexNorm.cpp"
 
 #include "fac.h"
 
@@ -97,10 +98,10 @@ int main () {
     cout << "Complex number example: " << z1 << "\n";
     cout << "The conjugate is: " << conj(z1) << "\n";
     cout << "The magnitude is: " << abs(z1) << "\n";
-    cout << "The phase in Radians is: " << arg(z1) << "\n";
-    cout << "The norm is: " << norm(z1) << "\n";
-    */
-    cout << "The natural log is: " << log(z1) << "\n";
+    cout << "The phase in Radians is: " << arg(z1) << "\n"; */
+    cout << "The norm is: " << norm(a) << "\n";
+    
+    //cout << "The natural log is: " << log(z1) << "\n";
     cout << "The sin is: " << sin(a) << "\n";
 
     /* other function testing */
