@@ -190,7 +190,13 @@ class Complex {
      friend Complex pow(double base, Complex exp);
      friend Complex pow(Complex base, Complex exp);
 
-  
+    /**
+     * Returns the absolute value (sqrt(a^2+b^2)) of com
+     * @param com the complex number to find the absolute value of
+     * @return the absolute value of com
+     * @author Aaron Lee
+     */
+     friend Complex cos(Complex other);
   
   
 }; // Complex class declaration
