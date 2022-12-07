@@ -13,7 +13,7 @@ Modified : Dec. 5th
 #include <cmath>
 
 double arg(Complex other) {
-  return atan(other.imaginary/other.real)*180/3.14159265359;
+  return atan(other.imaginary/other.real);
 }
 
 

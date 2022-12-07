@@ -128,10 +128,10 @@ class Complex {
      friend double arg(Complex other);
 
     /**
-     * Returns the absolute value (sqrt(a^2+b^2)) of com
-     * @param com the complex number to find the absolute value of
-     * @return the absolute value of com
-     * @author Aaron Lee
+     * Returns the conjugate of complex number
+     * @param com the complex number to find the conjugate of
+     * @return the conjugate of complex number
+     * @author Nathan Gonzalez
      */
      friend Complex conj(Complex other);
 
@@ -160,10 +160,10 @@ class Complex {
      friend Complex polar(double mag, double ang);
 
     /**
-     * Returns the absolute value (sqrt(a^2+b^2)) of com
-     * @param com the complex number to find the absolute value of
-     * @return the absolute value of com
-     * @author Aaron Lee
+     * Returns the real part of a complex number
+     * @param com the complex number to return the real of
+     * @return the real part of the complex
+     * @author Nathan Gonzalez
      */
      friend double real(Complex& other);
 
@@ -178,6 +178,18 @@ class Complex {
      * @author Aaron Lee
      */
      friend double sqrt(Complex other);
+
+    /**
+     * Returns the result of a complex or real to a real or complex power
+     * @param com base and exponent of the expression
+     * @return the result of the mathematical operation
+     * @author Nathan Gonzalez
+     */
+
+     friend Complex pow(Complex base, double exp);
+     friend Complex pow(double base, Complex exp);
+     friend Complex pow(Complex base, Complex exp);
+
   
   
   

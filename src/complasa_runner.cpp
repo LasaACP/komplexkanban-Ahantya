@@ -21,6 +21,7 @@
 #include "../lib/Functions/ComplexReal.cpp"
 #include "../lib/Functions/ComplexArg.cpp"
 #include "../lib/Functions/ComplexPolar.cpp"
+#include "../lib/Functions/ComplexPow.cpp"
 
 
 #include "fac.h"
@@ -104,8 +105,11 @@ int main () {
     cout << "The imaginary part is: " << imag(a) << "\n";
     cout << "The log (base 10) is: " << log10(a) << "\n";
     cout << "a^b is: " << pow(a, b) << "\n";
+*/
     cout << "a^2.7 is: " << pow(a, 2.7) << "\n";
     cout << "2.7^a is: " << pow(2.7, a) << "\n";
+    cout << "a^b is: " << pow(a, b) << "\n"; 
+  /*
     cout << "The cube root is: " << root(a, 3) << "\n\n";
 
     cout << "(a == b) is: " << ((a==b) ? "true" : "false") << "\n";
