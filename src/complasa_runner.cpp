@@ -25,6 +25,7 @@
 #include "../lib/Functions/ComplexSqrt.cpp"
 #include "../lib/Functions/ComplexCos.cpp"
 #include "../lib/Functions/ComplexSin.cpp"
+#include "../lib/Functions/ComplexExp.cpp"
 
 #include "fac.h"
 
@@ -81,6 +82,7 @@ int main () {
     cout << "angle of a = " << arg(a) << "\n";
     cout << "complex form for (5.39, 0.38) = " << polar(5.39, 0.38) << "\n";
     cout << "cos for a = " << cos(a) << "\n";
+    cout << "e raised is : " << exp(a) << "\n";
     //cout << "norm of a = " << norm(a) << "\n";
     //cout << "abs of a = " << abs(a) << "\n";
     //cout << "exp(a) = " << exp(a) << "\n";

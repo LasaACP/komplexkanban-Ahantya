@@ -208,6 +208,15 @@ class Complex {
   
     friend Complex sin (const Complex value);
 
+
+    /**
+     * Returns the result of e raised to a complex number.
+     * @param the complex number
+     * @return the result of the mathematical operation
+     * @author Ahantya Sharma
+     */
+
+    friend Complex exp (const Complex value);
   
 }; // Complex class declaration
 
