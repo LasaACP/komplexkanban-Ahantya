@@ -11,7 +11,7 @@ Modified : Dec. 5th
 
 #include "../../include/Complex.h"
 #include <cmath>
-#define double e = 2.718281828459045;
+#define e 2.718281828459045
 
 double Complex::raiseE(const Complex other) {
 {
