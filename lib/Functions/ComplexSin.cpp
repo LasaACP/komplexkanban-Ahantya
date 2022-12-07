@@ -15,7 +15,7 @@ Modified : Dec. 7th
 #include <cmath>
 
 Complex sin(const Complex other) {
-  double firsthalf = sin(other.real) + cosh(other.imaginary);
-  double secondhalf = cos(other.real) + sinh(other.imaginary);
-  return firsthalf + secondhalf;
+  double firsthalf = sin(other.real) * cosh(other.imaginary);
+  double secondhalf = cos(other.real) * sinh(other.imaginary);
+  return Complex(firsthalf, secondhalf);
 }
