@@ -13,7 +13,7 @@ Modified : Dec. 5th
 #include <cmath>
 #define e 2.718281828459045
 
-double Complex::raiseE(const Complex other) {
+double Complex raiseE(const Complex other) {
 {
     //e^(a + i * b) = e^a * e^(i * b), e^(i * b) = cos(b) + i * sin(b)
     power(e, other.real) * cos(other.imaginary) + i * sin(other.imaginary);
