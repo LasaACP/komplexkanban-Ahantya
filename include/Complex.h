@@ -172,10 +172,10 @@ class Complex {
   //------------------------------------- MATHEMATIC AND TRIG LIBRARY FUNCTIONS -------------------------------------------
 
     /**
-     * Returns the absolute value (sqrt(a^2+b^2)) of com
-     * @param com the complex number to find the absolute value of
-     * @return the absolute value of com
-     * @author Aaron Lee
+     * Returns the square root of com
+     * @param com the complex number to square root
+     * @return complex square root
+     * @author Nathan Gonzalez
      */
      friend Complex sqrt(Complex& other);
 
