@@ -190,8 +190,17 @@ class Complex {
      friend Complex pow(double base, Complex exp);
      friend Complex pow(Complex base, Complex exp);
 
+
+
+    /**
+     * Returns the result of sine of a complex number.
+     * @param complex number
+     * @return the result of the mathematical operation
+     * @author Ahantya Sharma
+     */
   
-  
+    friend Complex sin (const Complex value)
+
   
 }; // Complex class declaration
 

@@ -2,8 +2,8 @@
 
 #include <cmath>
 
-Complex sin(const complex) {
-  double firsthalf = sin(complex.real) + cosh(complex.imaginary);
-  double secondhalf = cos(complex.real) + sinh(complex.imaginary);
+Complex sin(const Complex other) {
+  double firsthalf = sin(other.real) + cosh(other.imaginary);
+  double secondhalf = cos(other.real) + sinh(other.imaginary);
   return firsthalf + secondhalf;
 }
