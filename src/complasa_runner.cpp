@@ -1,6 +1,9 @@
 #include <cstdlib>
 #include <iostream>
 #include "../include/Complex.h"
+#include "../tests/catch_amalgamated.hpp"
+#include "../tests/catch_amalgamated.cpp"
+
 
 #include "../lib/ComplexConstructors.cpp"
 //Operators
@@ -33,7 +36,7 @@ using namespace std;
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
-int main () {
+/*int main () {
   
     Complex a(3.0,4.0),b(2.0, 3.0);
     double c = 4;
@@ -41,7 +44,7 @@ int main () {
     cout << "a = " << a << "\n";
     cout << "b = " << b << "\n";
     cout << "c = " << c<< "\n\n";
-
+  
     //complex testing
     cout << "complex testing for operators:" << "\n";
     cout << "a + b = " << a + b << "\n";
@@ -96,23 +99,23 @@ int main () {
     cout << "The phase in Radians is: " << arg(z1) << "\n";
     cout << "The norm is: " << norm(z1) << "\n";
     */
-    cout << "The sqrt is: " << sqrt(a) << "\n";
-    cout << "The natural log is: " << log(a) << "\n";
+    //cout << "The sqrt is: " << sqrt(a) << "\n";
+    //cout << "The natural log is: " << log(a) << "\n";
     /*
     cout << "The sin is: " << sin(z1) << "\n";*/
 
     /* other function testing */
     /*
     cout << "\n------ OTHER FUNCTION TESTING ------\n\n";*/
-    cout << "The real part is: " << real(a) << "\n";
+    //cout << "The real part is: " << real(a) << "\n";
     /*
     cout << "The imaginary part is: " << imag(a) << "\n";
     cout << "The log (base 10) is: " << log10(a) << "\n";
     cout << "a^b is: " << pow(a, b) << "\n";
 */
-    cout << "a^2.7 is: " << pow(a, 2.7) << "\n";
-    cout << "2.7^a is: " << pow(2.7, a) << "\n";
-    cout << "a^b is: " << pow(a, b) << "\n"; 
+    //cout << "a^2.7 is: " << pow(a, 2.7) << "\n";
+    //cout << "2.7^a is: " << pow(2.7, a) << "\n";
+    //cout << "a^b is: " << pow(a, b) << "\n"; 
   /*
     cout << "The cube root is: " << root(a, 3) << "\n\n";
 
@@ -139,4 +142,28 @@ int main () {
     cout << "The acoth is: " << acoth(a) << "\n";
     cout << "The complex number rotated by pi/6 radians is: " << rotate(a, PI/6) << "\n";
     */
+//}
+
+#ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
+
+int main( int argc, char* argv[] ) {
+  // global setup...
+	cout << "hello";
+	
+  int result = Catch::Session().run( argc, argv );
+
+  // global clean-up...
+    cout << "Hello Catch2 Build with custom main()\n";
+
+  return result;
 }
+
+#else    //Not CATCH_AMALGAMATED_CUSTOM_MAIN
+
+TEST_CASE("Catch2 Test", "[Catch2]")
+{
+  REQUIRE(1 + 2 == 3);
+  REQUIRE(2 + 3 == 4);
+}
+// */
+#endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
