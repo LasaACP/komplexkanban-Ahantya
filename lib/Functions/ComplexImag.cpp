@@ -1,11 +1,11 @@
 /*
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Title : ComplexAbs.cpp
-Author : Aaron Lee
+Title : ComplexImag.cpp
+Author : Sanchit Rai
 URL : NA
-Description : The implementation for the complex number absolute value function that was written by Aaron Lee. 
+Description : The implementation to return the imaginary part of a complex number. 
 Created : Dec. 5th
-Modified : Dec. 5th
+Modified : Dec. 12th
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 
