@@ -139,7 +139,7 @@ class Complex {
      * Returns the imaginary part of the complex numer
      * @param complex number
      * @return the imaginary part of com
-     * @author Aaron Lee
+     * @author Sanchit Rai
      */
      friend double imag(Complex& other);
 
