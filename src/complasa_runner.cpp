@@ -15,6 +15,7 @@
 #include "../lib/Operators/ComplexOutput.cpp"
 #include "../lib/Operators/ComplexSubtraction.cpp"
 #include "../lib/Operators/ComplexSubtractionAssign.cpp"
+#include "../lib/Operators/ComplexInequality.cpp"
 //Functions
 #include "../lib/Functions/ComplexAbsoluteValue.cpp"
 #include "../lib/Functions/ComplexConj.cpp"
@@ -28,7 +29,7 @@
 #include "../lib/Functions/ComplexSin.cpp"
 #include "../lib/Functions/ComplexExp.cpp"
 #include "../lib/Functions/ComplexNorm.cpp"
-
+#include "../lib/Functions/ComplexImag.cpp"
 #include "fac.h"
 
 using namespace std;

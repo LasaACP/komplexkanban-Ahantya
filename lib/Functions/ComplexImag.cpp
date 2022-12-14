@@ -11,7 +11,7 @@ Modified : Dec. 12th
 
 #include "../../include/Complex.h"
 #include <cmath>
-double abs(Complex other){
+double imag(Complex& other){
   
   return other.imaginary;
 

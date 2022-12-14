@@ -105,7 +105,16 @@ class Complex {
      */
 	bool operator ==(Complex other);
 	bool operator ==(double other);
-  
+
+
+  /**
+     * Compares a complex number to a complex/real number: if the real and imaginary parts are not equal (a real number's imaginary part is 0)  returns true
+     * @param com The complex/real number to subtract
+     * @return boolean: true if complex are not equal, else false
+     * @author Sanchit Rai
+     */
+	bool operator !=(Complex other);
+	bool operator !=(double other);
   
   
   
