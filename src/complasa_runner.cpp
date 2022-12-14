@@ -75,6 +75,7 @@ int main( int argc, char* argv[] ) {
       cout << "a /= c" << "\na = " << a << "\n";
       a *= c;
       cout << "a *= c" << "\na = " << a << "\n\n";
+      cout << "(a != b) = " << (a != b) << "\n";
 
       //Arithmetic Library Function testing
       cout << "Arithmetic Library Function testing:" << "\n";
@@ -84,6 +85,8 @@ int main( int argc, char* argv[] ) {
       cout << "complex conjugate of a = " << conj(a) << "\n";
       cout << "angle of a = " << arg(a) << "\n";
       cout << "complex form for (5.39, 0.38) = " << polar(5.39, 0.38) << "\n";
+      cout << "the imaginary part of a is " << imag(a);
+      cout << "The real part is: " << real(a) << "\n";
       //cout << "norm of a = " << norm(a) << "\n";
       //cout << "abs of a = " << abs(a) << "\n";
       //cout << "exp(a) = " << exp(a) << "\n";
@@ -108,7 +111,6 @@ int main( int argc, char* argv[] ) {
       /* other function testing */
       /*
       cout << "\n------ OTHER FUNCTION TESTING ------\n\n";*/
-      cout << "The real part is: " << real(a) << "\n";
       /*
       cout << "The imaginary part is: " << imag(a) << "\n";
       cout << "The log (base 10) is: " << log10(a) << "\n";

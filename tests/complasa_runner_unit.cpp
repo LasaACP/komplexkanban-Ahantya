@@ -12,6 +12,7 @@
 #include "../lib/Operators/ComplexDivision.cpp"
 #include "../lib/Operators/ComplexDivisionAssign.cpp"
 #include "../lib/Operators/ComplexEqualityOperator.cpp"
+#include "../lib/Operators/ComplexInequality.cpp"
 #include "../lib/Operators/ComplexInput.cpp"
 #include "../lib/Operators/ComplexMultiplication.cpp"
 #include "../lib/Operators/ComplexMultiplicationAssign.cpp"
@@ -93,6 +94,10 @@ TEST_CASE("Catch2 Test", "[Catch2]")
   CHECK(!(a == b));
 
   CHECK(!(a == c));
+
+  CHECK(a != b);
+
+  CHECK(a != c);
   
   CHECK(conj(a).real == 3.0);
   CHECK(conj(a).imaginary - -4.0 < 0.0001);
