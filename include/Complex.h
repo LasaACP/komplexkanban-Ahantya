@@ -217,6 +217,17 @@ class Complex {
      */
 
     friend Complex exp (const Complex value);
+
+    /**
+     * Returns the the natural logarithm of its argument. 
+     * @param the complex number
+     * @return the result of the mathematical operation using a log.
+     * @author Nathan Gonzalez
+     */
+
+    friend Complex log (const Complex value);
+
+
   
 }; // Complex class declaration
 
