@@ -16,4 +16,4 @@ we had to change this. - 12/2/22
 
 cd tests
 make
-/a.out
+/#@

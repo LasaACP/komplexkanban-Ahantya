@@ -11,13 +11,13 @@ Modified : Dec. 14th
 
 #include "../../include/Complex.h"
 
-bool Complex::operator !=(Complex other)
+bool Complex::operator !=(Complex other) const
 {
 	return (real != other.real && imaginary != other.imaginary);
 }
 
-bool Complex::operator !=(double other)
+bool Complex::operator !=(double other) const
 {
-	return (imaginary != 0 ||(other != real && imaginary == 0));
+	return (imaginary != 0 || (other != real && imaginary == 0));
 }
 
