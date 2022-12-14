@@ -1,9 +1,6 @@
 #include <cstdlib>
 #include <iostream>
 #include "../include/Complex.h"
-#include "../tests/catch_amalgamated.hpp"
-#include "../tests/catch_amalgamated.cpp"
-
 
 #include "../lib/ComplexConstructors.cpp"
 //Operators
