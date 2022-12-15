@@ -103,8 +103,8 @@ class Complex {
      * @return boolean: true if complex are equal, else false
      * @author Aaron Lee
      */
-	bool operator ==(Complex other);
-	bool operator ==(double other);
+	bool operator ==(Complex other) const;
+	bool operator ==(double other) const;
 
 
   /**

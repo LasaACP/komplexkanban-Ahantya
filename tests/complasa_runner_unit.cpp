@@ -56,6 +56,16 @@ int main( int argc, char* argv[] ) {
 
 TEST_CASE("Catch2 Test", "[Catch2]")
 {
+
+  Complex x;
+  cout << "Enter values: ";
+  //enter (3.45,5) so check values work, but if you change values, then change check for it to work.
+  cin >> x;
+  //CHECK(x.real == 3.45);
+  //CHECK(x.imaginary == 5.0);
+  //cout << x;
+  //if you uncomment, it will print user input.
+  cout << "Value entered: " << x << endl;
   
   Complex a(3.0,4.0),b(2.0, 3.0);
   double c = 4;

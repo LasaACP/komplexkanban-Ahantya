@@ -39,6 +39,11 @@ using namespace std;
 
 int main( int argc, char* argv[] ) {
   // global setup...
+  Complex x;
+  cout << "Enter complex number: ";
+  cin >> x;
+  cout << "Complex number entered is " << x << "\n";
+  
   Complex a(3.0,4.0),b(2.0, 3.0);
       double c = 4;
 
